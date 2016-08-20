@@ -26,15 +26,20 @@ public class MainActivity extends AppCompatActivity {
         final ViewPager viewPager= (ViewPager) findViewById(R.id.viewPager);
         imageViewList=new ArrayList<>();
         ImageView first=new ImageView(MainActivity.this);
-        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.first,MainActivity.this));
+//        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.first,MainActivity.this));
+        first.setImageResource(R.mipmap.first);
         ImageView second=new ImageView(MainActivity.this);
-        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.second,MainActivity.this));
+//        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.second,MainActivity.this));
+        second.setImageResource(R.mipmap.second);
         ImageView third=new ImageView(MainActivity.this);
-        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.third,MainActivity.this));
+//        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.third,MainActivity.this));
+        third.setImageResource(R.mipmap.third);
         ImageView fourth=new ImageView(MainActivity.this);
-        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fourth,MainActivity.this));
+//        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fourth,MainActivity.this));
+        fourth.setImageResource(R.mipmap.fourth);
         ImageView fifth=new ImageView(MainActivity.this);
-        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fifth,MainActivity.this));
+//        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fifth,MainActivity.this));
+        fifth.setImageResource(R.mipmap.fifth);
         imageViewList.add(first);
         imageViewList.add(second);
         imageViewList.add(third);
@@ -49,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             lp.width=pagerWidth;
         }
         viewPager.setLayoutParams(lp);
-        viewPager.setPageMargin(-100);
+        viewPager.setPageMargin(-50);
         findViewById(R.id.activity_main).setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
