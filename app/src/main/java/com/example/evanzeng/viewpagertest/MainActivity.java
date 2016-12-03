@@ -26,20 +26,18 @@ public class MainActivity extends AppCompatActivity {
         final ViewPager viewPager= (ViewPager) findViewById(R.id.viewPager);
         imageViewList=new ArrayList<>();
         ImageView first=new ImageView(MainActivity.this);
-//        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.first,MainActivity.this));
-        first.setImageResource(R.mipmap.first);
+        /**
+         * 为imageview生成的带犹豫倒影的bitmap
+         */
+        first.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.first,MainActivity.this));
         ImageView second=new ImageView(MainActivity.this);
-//        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.second,MainActivity.this));
-        second.setImageResource(R.mipmap.second);
+        second.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.second,MainActivity.this));
         ImageView third=new ImageView(MainActivity.this);
-//        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.third,MainActivity.this));
-        third.setImageResource(R.mipmap.third);
+        third.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.third,MainActivity.this));
         ImageView fourth=new ImageView(MainActivity.this);
-//        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fourth,MainActivity.this));
-        fourth.setImageResource(R.mipmap.fourth);
+        fourth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fourth,MainActivity.this));
         ImageView fifth=new ImageView(MainActivity.this);
-//        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fifth,MainActivity.this));
-        fifth.setImageResource(R.mipmap.fifth);
+        fifth.setImageBitmap(ImageUtil.getReverseBitmapById(R.mipmap.fifth,MainActivity.this));
         imageViewList.add(first);
         imageViewList.add(second);
         imageViewList.add(third);
